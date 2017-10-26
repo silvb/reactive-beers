@@ -1,0 +1,44 @@
+{
+  "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:jest/recommended"
+    ],
+    "plugins": [
+        "jest",
+        "react"
+    ],
+  // personal preference
+  "env": {
+      "browser": true,
+      "jest/globals": true,
+      "node": true
+  },
+  "rules": {
+      "no-unused-vars": "warn",
+      "quotes": ["warn", "single"],
+      "indent": ["warn", 2],
+      "comma-dangle": ["error", {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }],
+      "no-use-before-define": "off",
+      "no-param-reassign": "off",
+      "max-len": "off",
+      "arrow-parens": ["warn", "as-needed"],
+      "func-names": "off",
+      "space-before-function-paren": ["error", "never"],
+      "eol-last": "off",
+      "no-console":"warn",
+      "semi": ["warn", "never"],
+      "no-trailing-spaces": "warn"
+  },
+  "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 6,
+      "experimentalObjectRestSpread": true
+  }
+}

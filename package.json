@@ -1,0 +1,74 @@
+{
+  "name": "reactive-beers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/silvb/reactive-beers.git",
+  "author": "Silvio Bauer <silvio.bauer01@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --env.development --progress --colors --inline",
+    "test": "jest",
+    "test:watch": "yarn test -- --watch"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "reset-css": "^2.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "axios-mock-adapter": "^1.9.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.9.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-react": "^7.4.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.8",
+    "react-hot-loader": "^3.1.1",
+    "react-test-renderer": "^16.0.0",
+    "redux-mock-store": "^1.3.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ]
+          }
+        }
+      ],
+      "react"
+    ],
+    "plugins": [
+      "react-hot-loader/babel",
+      "transform-object-rest-spread"
+    ]
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

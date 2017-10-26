@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders without crashing 1`] = `
+<div
+  className="app-container"
+>
+  <header>
+    <h1>
+      Reactive Beers 🍺🍺🍺
+    </h1>
+  </header>
+  <div
+    className="search-area"
+  >
+    <input
+      className="search-area__input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <div
+      className="search-area__button-clear"
+      onClick={[Function]}
+    >
+      Clear
+    </div>
+  </div>
+  <div
+    className="beercards"
+  />
+</div>
+`;
