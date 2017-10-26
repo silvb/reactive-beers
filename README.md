@@ -1,51 +1,17 @@
-# test_javascript
+# Reactive Beers
 
-Here is your final information for the coding challenge:
+This is my first project using React and Redux. I set up this little project to get some practical knowledge about the React/Redux ecosystem.
 
-- The coding task should not take more than 3 hours, make sure you push your final solution before the deadline
-- Make use of best-practice and clean code as you seem fit, it should reflect your daily working routine
-- If you have issues with understanding the task, please don’t hesitate to contact us.
+I must say, React + Redux = ❤️
 
+It is so much fun to build views this way. It's really easy to maintain a clean codebase. Debugging is fun, bugs stay at a minimum and the world just becomes a better place ;)
 
-## web app
+## Lessons Learned
 
-Create a web app with an idea on your own. Give is a use case with some kind of central state, implementation
-is completely up to you.
+I included the following in the project:
 
+* **Stateless, functional components**. Every react component is basically a function. No local state management inside a component. No lifecycle hooks.
+* **Redux**: State is managed globally. State manipulation is done only by dispatching predefined actions. State is trickled down and available to the components when needed.
+* **Async Actions**: I used a public API, [Punk API](https://punkapi.com/) to get some sample data. This required me to understand asynchronous state manipulation. Also, for testing the API needed to be mocked
+* **Dev setup for Webpack to get Babel, React, Redux and SASS to play together nicely**
 
-###### Project Ideas
-
-- Slot machine in a Casino, with a credit account and statistics or high score
-- Product overview on an eCommerce shop, with some filter functionality
-- App for a small notes app with dashboard
-
-
-#### requirements
-
-- Framework:  React / Redux
-- Tests: Jest
-- Bundler: Webpack (sufficient to run in dev mode)
-- JavaScript: ES6
-- Compiler: Babel
-
-
-###### Bonus
-
-- Use TypeScript or Flow for strict types in the JavaScipt part
-- Take a look at our open source projects: https://github.com/xing/hops
-
-All other tools and technologies are up to you.
-
-
-We are looking forward to your solution.
-Good Luck.
-
-### My Remarks (Silvio)
-
-- I built a simple app `Reactive Beers` that lists some 🍻-data fetched from a public API ([Punk API](https://punkapi.com/))
-- Nothing exciting feature-wise, you can simply filter the list by using the input and clear the input with a button
-- This is my first time building something with React & Redux, so be gentle ;)
-
-#### Dev Environment
-
-It's a straightforward environment build on yarn and webpack. Install all dependencies with `yarn install`, start the local server at port 3000 with `yarn start` and run the tests with `yarn test`.
