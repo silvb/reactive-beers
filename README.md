@@ -1,5 +1,7 @@
 # Reactive Beers
 
+<img src="snapshot.jpg" alt="">
+
 This is my first project using React and Redux. I set up this little project to get some practical knowledge about the React/Redux ecosystem.
 
 I must say, React + Redux = ❤️
